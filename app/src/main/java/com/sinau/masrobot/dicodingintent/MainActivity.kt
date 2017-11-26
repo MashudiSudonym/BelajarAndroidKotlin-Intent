@@ -1,6 +1,7 @@
 package com.sinau.masrobot.dicodingintent
 
 import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,6 +28,12 @@ class MainActivity : AppCompatActivity() {
             moveWithDataIntent.putExtra(MoveWithDataActivity().EXTRA_NAME, "DicodingAcademy Gan!!")
             moveWithDataIntent.putExtra(MoveWithDataActivity().EXTRA_AGE, 5)
             startActivity(moveWithDataIntent)
+        }
+
+        btn_dial_number.setOnClickListener {
+            val phoneNumber: String = "123"
+            val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel: ${phoneNumber}"))
+            startActivity(dialPhoneIntent)
         }
     }
 }

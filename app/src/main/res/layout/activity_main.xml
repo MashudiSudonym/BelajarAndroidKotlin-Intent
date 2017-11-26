@@ -21,4 +21,10 @@
         android:layout_height="wrap_content"
         android:text="Pindah Activity dengan Data"
         android:layout_marginBottom="@dimen/activity_vertical_margin" />
+    <Button
+        android:id="@+id/btn_dial_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial a Number"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
 </LinearLayout>
